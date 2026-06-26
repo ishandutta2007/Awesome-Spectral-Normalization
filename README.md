@@ -77,4 +77,15 @@ Spectral Normalization is widely used to enforce stability and robustness across
 | :--- | :--- | :--- | :--- |
 | 🎨 [High-Resolution BigGAN & ProGAN Synthesis](details/biggan_progan_synthesis.md) | **Application:** Serves as the core structural layer enabling stable multi-class image generation at high resolutions (e.g., $512 \times 512$ pixels). SN prevents the Discriminator from overpowering the Generator, stopping mode collapse loops. | 2018 | [Large Scale GAN Training for High Fidelity Natural Image Synthesis](https://arxiv.org/abs/1809.11096) |
 | 🤖 [Deep Reinforcement Learning Value-Function Approximation](details/deep_rl_value_function.md) | **Application:** Stabilizes value-network evaluations in deep Q-learning (DQN) arrays. Bounding the Lipschitz constant of the network prevents sudden value-estimation spikes from propagating across temporal difference updates. | 2021 | [Towards Deeper Deep Reinforcement Learning with Spectral Normalization](https://arxiv.org/abs/2006.07369) |
-| 🛡️ [Adversarial Defense Hardening & Certified Robustness](details/adversarial_defense_certified_robustness.md) | **Application:** Protects vision networks against targeted adversarial attacks (such as FGSM or PGD pixel modifications). Enforcing spectral constraints guarantees that a tiny change in input pixel coordinates cannot trigger an erratic shift in the output classification probability vector. | 2017 | [Parseval Networks: Improving Robustness to Adversarial Examples](https://arxiv.org/abs/1704.08847) |
+| 🛡️ [Adversarial Defense Hardening & Certified Robustness](details/adversarial_defense_certified_robustness.md) | **Application:** Protects vision networks against targeted adversarial attacks (such as FGSM or PGD pixel modifications). Enforcing spectral constraints guarantees that a tiny change in input pixel coordinates cannot trigger an explosive, erratic shift in the output classification probability vector. | 2017 | [Parseval Networks: Improving Robustness to Adversarial Examples](https://arxiv.org/abs/1704.08847) |
+
+##  Star History
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-Spectral-Normalization&type=date&legend=bottom-right">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Spectral-Normalization&type=date&theme=dark&legend=bottom-right" />
+<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Spectral-Normalization&type=date&legend=bottom-right" />
+<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Spectral-Normalization&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
