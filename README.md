@@ -9,8 +9,12 @@ Spectral Normalization (SN) is a hardware-aware regularization technique primari
 
 The implementation of Lipschitz-bounding regularizers has transitioned from strict penalty functions to computationally light power-iteration matrix scaling and multi-axis tensor normalization.
 
-[Weight Clipping (Wasserstein GAN, 2017)] ----> [Gradient Penalty (WGAN-GP, 2017)] ----> [Spectral Normalization (SN-GAN, 2018-Present)](Capacity Collapse / Sharp Gradients)             (Heavy Double-Backward Pass Latency)           (Fast Power-Iteration Matrix Scaling)
-
+```mermaid
+flowchart LR
+    A["Weight Clipping (Wasserstein GAN, 2017)<br/>(Capacity Collapse / Sharp Gradients)"]
+    --> B["Gradient Penalty (WGAN-GP, 2017)<br/>(Heavy Double-Backward Pass Latency)"]
+    --> C["Spectral Normalization (SN-GAN, 2018-Present)<br/>(Fast Power-Iteration Matrix Scaling)"]
+```
 
 *   **The Weight Clipping Precursor (2017)**
     *   *Concept:* Popularized by the original Wasserstein GAN (WGAN) to enforce 1-Lipschitz continuity. Weights were rigidly clipped to a static, compact hypercube (e.g., $[-0.01, 0.01]$) after every optimization step.
